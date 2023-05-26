@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Formulaire d'inscription</title>
+
+    <!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src=
+	"https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+	</script>
+	<!-- Popper JS -->
+	<script src=
+	"https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+	</script>
+	<!-- Latest compiled JavaScript -->
+	<script src=
+	"https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+	</script>
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+
+
+</head>
+<body>
+
+    <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-dark navbar-dark navbar-custom"> 
+        <a href="index.html"
+           class="navbar-brand mb-0 h1">
+            <img  
+            class="logo"
+            src="images/logo.png" 
+            alt="Logo du site" />
+                     
+        </a>
+        <button 
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarNav"
+        class="navbar-toggler"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        >
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <A HREF="pageLeClub.html" class="nav-link active menu h3" >
+                        Le Club 
+                        <i class="fa fa-users icone-menu" aria-hidden="true"></i>
+                    </A>
+                </li>
+                <li class="nav-item active">
+                    <A HREF="pageContacts.html"  class="nav-link active h3">
+                        Contacts
+                        <i class="fa fa-address-card-o icone-menu" aria-hidden="true"></i>
+                    </A>
+                </li>
+                <li class="nav-item active">
+                    <A HREF="pageConnexion.html"  class="nav-link active h3">
+                        Connexion
+                        <i class="fa fa-sign-in icone-menu" aria-hidden="true"></i>
+                    </A>
+                </li>
+                <li class="nav-item active">
+                    <A HREF="pagePanier.html" class="nav-link active h3 disabled">
+                        Panier
+                        <i class="fa fa-shopping-basket icone-menu" aria-hidden="true"></i>
+                    </A>
+                </li>
+                <li class="nav-item active">
+                    <A HREF="pageChercher.html" class="nav-link active h3">
+                        Chercher
+                        <i class="fa fa-search icone-menu" aria-hidden="true"></i>
+
+                    </A>
+                </li>
+            </ul>
+        </div>  
+        
+    </nav>
+
+    <div class="contenuConnexion">
+        <h1 class="titrePage">Connexion</h1>
+        <div class="espace-connexion ">
+
+            <h1 class="text-center text-success">
+                Bienvenue à la création du compte
+            </h1>
+
+    
+            <div class="container">
+
+                <div class="col-lg-8 m-auto d-block">
+                    <form action="pageConfirmationCompte.html" onsubmit="validationComplete()">
+
+                    <div class="col-lg-8m-auto d-block">
+        
+                        <div class="for-group">
+                            <label for="user">
+                                <h1 class="auteurLivre">
+                                    Nom:
+                                </h1>
+                            </label><br>
+                            <input type="text" id="leNom" name="leNom" class="form-control" placeholder="Ex : une à 25 lettres de l’alphabet latin (majuscules et minuscules acceptées)" pattern="^(\b\w{1,25}\b)$" required><br>
+                        
+                        </div>
+        
+
+                        <div class="for-group">
+                            <label for="leCodeUsage">
+                                <h1 class="auteurLivre">
+                                    Le code d'usage:
+                                </h1>
+                            </label><br>
+                            <input type="text" id="leCodeUsage" name="leCodeUsage" class="form-control" placeholder="Ex : ABCD01234567AB" pattern="^([A-Z]){4}([0-9]){8}([A-Z]){2}$" required><br>
+                
+                        </div>
+                    
+                    
+                        <div class="for-group">
+                            <label for="lecodeEcole">
+                                <h1 class="auteurLivre">
+                                    Le code d'école:
+                                </h1>
+                            </label><br>
+                            <input type="text" id="lecodeEcole" name="lecodeEcole" class="form-control" placeholder="Ex : AB" pattern = "^[A-Z]{2}$" required><br>
+                        
+                        </div>
+        
+        
+                        <div class="for-group">
+                            <label for="phone">
+                                <h1 class="auteurLivre">
+                                    Téléphone:
+                                </h1>
+                            </label><br>
+                            <input type="tel" id="telephone" name="telephone" class="form-control" placeholder="Ex : 0123456789" pattern="^[0][^0]{1}[0-9]{8}|^[1-9][0-9]{9}$" required><br>
+                        
+                        
+                        </div>
+        
+        
+                        <div class="for-group">
+                            <label for="user">
+                                <h1 class="auteurLivre">
+                                    <h1 class="auteurLivre">
+                                        Courriel:
+                                    </h1>
+                                </h1>
+                            </label><br>
+                            <input type="email" id="courriel" required class="form-control" placeholder="Ex : nom@gmail.com"><br>
+                        </div>
+        
+                    </div>
+
+                <div>
+    
+    
+                    <br>
+                    <br>
+        
+                    <input type="hidden" name="MAX_FILE_SIZE" value="4194304" />
+                    <input type="file" />
+        
+                    <fieldset>
+                        
+                        <h1 class="auteurLivre">
+                            Choisissez votre méthode de réception des spéciaux de la semaine:
+                        </h1>
+
+                        <input type="radio" value="email" id="email" name="méthode" required>
+                        <label for="email">
+                            Email
+                        </label><br>
+
+                        <input type="radio" value="poste" id="poste" name="méthode" required>
+                        <label for="poste">Poste</label>
+
+                    </fieldset>
+        
+            </div>
+
+                <input type="submit" id="submitbtn" value="Submit" class="btn btn-primary">
+
+            
+            </form>
+
+
+
+        </div>
+
+    </div>
+</div>
+
+</div>
+
+
+    <footer>
+        <div class="container">
+        <p class="m-0 text-center text-white">Ce site est développé dans le cadre du cours INF3190 à l’UQAM</p>
+        
+        <a href="https://gitlab.info.uqam.ca/nayeri_poor.ali/inf3190-a21-tp" onclick="fenetrePopUp(this.href);return false">Essongue Kumambuelet Oswald</a><br>
+        <a href="https://gitlab.info.uqam.ca/nayeri_poor.ali/inf3190-a21-tp" onclick="fenetrePopUp(this.href);return false">Nayeri Poor Ali</a><br>
+
+        
+        <a href="https://uqam.ca/" target="_blank">UQAM</a><br>
+        
+        <a href="https://etudier.uqam.ca/cours?sigle=INF3190">INF3190</a>
+        </div>
+    </footer>    
+
+    
+    
+    
+    <script src="js/formulaireJAVASCRIPT.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,251 @@
+  
+  <!doctype html>
+  <html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+        <link rel="stylesheet" href="css/style.css">
+        <title>Formulaire d'inscription</title>
+    
+        <!-- Latest compiled and minified CSS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+        <!-- jQuery library -->
+        <script src=
+        "https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js">
+        </script>
+        <!-- Popper JS -->
+        <script src=
+        "https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js">
+        </script>
+        <!-- Latest compiled JavaScript -->
+        <script src=
+        "https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js">
+        </script>
+         <!-- Bootstrap CSS -->
+         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      
+         <!-- Icone fontawesome-->
+         <script src="https://kit.fontawesome.com/6731226403.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+  
+      <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-dark navbar-dark navbar-custom"> 
+          <a href="index.html"
+             class="navbar-brand mb-0 h1">
+              <img  
+              class="logo"
+              src="images/logo.png" 
+              alt="Logo du site" />
+                       
+          </a>
+          <button 
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          class="navbar-toggler"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+          >
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+              <ul class="navbar-nav">
+                  <li class="nav-item active">
+                      <A HREF="pageLeClub.html" class="nav-link active menu h3" >
+                          Le Club 
+                          <i class="fa fa-users icone-menu" aria-hidden="true"></i>
+                      </A>
+                  </li>
+                  <li class="nav-item active">
+                      <A HREF="pageContacts.html"  class="nav-link active h3">
+                          Contacts
+                          <i class="fa fa-address-card-o icone-menu" aria-hidden="true"></i>
+                      </A>
+                  </li>
+                  <li class="nav-item active">
+                      <A HREF="pageConnexion.html"  class="nav-link active h3">
+                          Connexion
+                          <i class="fa fa-sign-in icone-menu" aria-hidden="true"></i>
+                      </A>
+                  </li>
+                  <li class="nav-item active">
+                      <A HREF="pagePanier.html" class="nav-link active h3 disabled">
+                          Panier
+                          <i class="fa fa-shopping-basket icone-menu" aria-hidden="true"></i>
+                      </A>
+                  </li>
+                  <li class="nav-item active">
+                      <A HREF="pageChercher.html" class="nav-link active h3">
+                          Chercher
+                          <i class="fa fa-search icone-menu" aria-hidden="true"></i>
+  
+                      </A>
+                  </li>
+              </ul>
+          </div>  
+          
+      </nav>
+  
+  
+  
+      <div class="contenuChercher">
+  
+          <h1 class="titrePage">Chercher</h1>
+          <div class="espace-chercher espace">
+
+            
+            <input id="bouttonRecherche" type="text" placeholder="Rechercher un livre ou une catégorie" >
+            <input type="button" value="Rechercher" onclick="rechercher()">
+
+            <script src="js/rechercher.js" charset="UTF-8"> </script>  
+            
+            
+            <div id="Fantaisie">
+                <h1 class="categorieLivre">Fantaisie</h1>
+                <div class='contenuLivre'>
+                    <div class="cardLivre" id="Harry Potter à l'école des sorciers">
+                        <img class="imageLivre" src="images/livre/Fantaisie/harryEcole.jpg" alt="Harry Potter à l'école des sorciers" style="width:100%">
+                        <h1 class="titreLivre">Harry Potter à l'école des sorciers</h1>
+                        <h2 class="auteurLivre">J.K. Rowling</h2>
+                        <p class="price"><del>17.95$</del> 14.95$</p>
+                        <p class="descriptionLivre">Harry Potter à l'école des sorciers est le premier roman de la série littéraire centrée sur le personnage de Harry Potter, créé par J. K. Rowling. Sorti le 26 juin 1997, il est initialement tiré à 500 exemplaires. En France, le roman a été publié le 9 octobre 1998. (source : Wikipédia)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                    <div class="cardLivre" id="Harry Potter et la Chambre des secrets">
+                        <img class="imageLivre" src="images/livre/Fantaisie/harryChambre.jpg" alt="Harry Potter et la Chambre des secrets" style="width:100%">
+                        <h1 class="titreLivre">Harry Potter et la Chambre des secrets</h1>
+                        <h2 class="auteurLivre">J.K. Rowling</h2>
+                        <p class="price">17.95$</p>
+                        <p class="descriptionLivre">Harry Potter et la Chambre des secrets est le deuxième roman de la série littéraire centrée sur le personnage de Harry Potter créé par J. K. Rowling. Il a été publié le 2 juillet 1998 par Bloomsbury et le 23 mars 1999 en France.  (source : Wikipédia)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                    <div class="cardLivre" id="Harry Potter et le Prisonnier d'Azkaban">
+                        <img class="imageLivre" src="images/livre/Fantaisie/harryAzcaban.jpg" alt="Harry Potter et le Prisonnier d'Azkaban" style="width:100%">
+                        <h1 class="titreLivre">Harry Potter et le Prisonnier d'Azkaban</h1>
+                        <h2 class="auteurLivre">J.K. Rowling</h2>
+                        <p class="price">17.95$</p>
+                        <p class="descriptionLivre">Harry Potter et le Prisonnier d'Azkaban est le troisième roman de la série littéraire centrée sur le personnage de Harry Potter créé par J. K. Rowling. Il a été publié le 19 octobre 1999 en France. (source : Wikipédia)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                   
+                </div>
+
+                <div class='contenuLivre'>
+                    <div class="cardLivre" id="La Communauté de l'Anneau">
+                        <img class="imageLivre" src="images/livre/Fantaisie/51egzPfq4kL._SX346_BO1,204,203,200_.jpg" alt="La Communauté de l'Anneau" style="width:100%">
+                        <h1 class="titreLivre">La Communauté de l'Anneau</h1>
+                        <h2 class="auteurLivre">J.R.R Tolkien</h2>
+                        <p class="price"><del>21.95$</del> 16.95$</p>
+                        <p class="descriptionLivre">La Fraternité de l'Anneau est la première partie du Seigneur des anneaux, roman en trois volumes de l'écrivain britannique J. R. R. Tolkien, parue le 29 juillet 1954 au Royaume-Uni. (source : Wikipédia)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                </div>
+
+            </div>
+
+            <div id="Policier">
+                <h1 class="categorieLivre">Policier</h1>
+                <div class='contenuLivre'>
+                    <div class="cardLivre" id="Le Meurtre de Roger Ackroyd">
+                        <img class="imageLivre" src="images/livre/policier/meurtreRoger.jpg" alt="Le Meurtre de Roger Ackroyd" style="width:100%">
+                        <h1 class="titreLivre">Le Meurtre de Roger Ackroyd</h1>
+                        <h2 class="auteurLivre">Agatha Christie</h2>
+                        <p class="price">13.50$</p>
+                        <p class="descriptionLivre">Le Meurtre de Roger Ackroyd est un roman policier d'Agatha Christie, écrit et publié en 1926 au Royaume-Uni chez Collins. À King's Abbot, commune fictive de la campagne britannique, Roger Ackroyd est assassiné dans son bureau. (source : Wikipédia)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                    <div class="cardLivre" id="Le Crime de l'Orient-Express">
+                        <img class="imageLivre" src="images/livre/policier/crimeOrient.gif" alt="Le Crime de l'Orient-Express" style="width:100%">
+                        <h1 class="titreLivre" >Le Crime de l'Orient-Express</h1>
+                        <h2 class="auteurLivre">Agatha Christie</h2>
+                        <p class="price">17.95$</p>
+                        <p class="descriptionLivre">Le Crime de l'Orient-Express est un roman policier d'Agatha Christie publié le 1ᵉʳ janvier 1934 au Royaume-Uni, mettant en scène Hercule Poirot. Il est publié la même année aux États-Unis sous le titre Murder in the Calais Coach, puis en France. (source : Wikipédia)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Philosophique">
+                <h1 class="categorieLivre">Philosophique</h1>
+                <div class='contenuLivre'>
+                    <div class="cardLivre" id="Le Petit Prince">
+                        <img  class="imageLivre" src="images/livre/philosophique/petitprince.jpg" alt="Le Petit Prince" style="width:100%">
+                        <h1 class="titreLivre">Le Petit Prince</h1>
+                        <h2 class="auteurLivre">Antoine de Saint-Exupery</h2>
+                        <p class="price">6.95$</p>
+                        <p class="descriptionLivre">Le Petit Prince est une œuvre de langue française, la plus connue d'Antoine de Saint-Exupéry. Publié en 1943 à New York simultanément à sa traduction anglaise, c'est une œuvre poétique et philosophique sous l'apparence d'un conte pour enfants. (source : Wikipédia)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                    <div class="cardLivre" id="L'Alchimiste">
+                        <img class="imageLivre" src="images/livre/philosophique/alchimiste.pjpeg" alt="L'Alchimiste" style="width:100%">
+                        <h1 class="titreLivre">L'Alchimiste</h1>
+                        <h2 class="auteurLivre">Paulo Coelho</h2>
+                        <p class="price">12.95$</p>
+                        <p class="descriptionLivre">L'Alchimiste est un conte philosophique de Paulo Coelho paru en 1988. La traduction française, signée Jean Orecchioni, a été publiée en 1994. (source : Wikipédia)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                </div>
+            </div>
+
+            <div id="Manga">
+                <h1 class="categorieLivre">Manga</h1>
+                <div class='contenuLivre'>
+                    <div class="cardLivre" id="Naruto tome 1">
+                        <img class="imageLivre" src="images/livre/manga/naruto.jpg" alt="Naruto tome 1" style="width:100%">
+                        <h1 class="titreLivre">Naruto tome 1</h1>
+                        <h2 class="auteurLivre">Masashi Kishimoto</h2>
+                        <p class="price">$19.99</p>
+                        <p class="descriptionLivre">Naruto est un garçon un peu spécial. Il est toujours tout seul et son caractère fougueux ne l'aide pas vraiment à se faire apprécier dans son village. ...(source : Google Books)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                    <div class="cardLivre" id="One piece tome 1">
+                        <img class="imageLivre" src="images/livre/manga/onepiece.jpg" alt="One piece tome 1" style="width:100%">
+                        <h1 class="titreLivre">One piece tome 1</h1>
+                        <h2 class="auteurLivre">Eiichirō Oda</h2>
+                        <p class="price">$19.99</p>
+                        <p class="descriptionLivre">Il y a bien longtemps, alors que les pirates parcouraient les mers à la recherche de trésors oubliés, fut éxécuté celui que l'on considérait comme le plus riche des pirates Gold Roger. Il déclara avant de mourir que son trésor appelé One Piece était caché quelque part dans le monde...(source : Google Books)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                    <div class="cardLivre" id="Berserk tome 1">
+                        <img class="imageLivre" src="images/livre/manga/berserk.jpg" alt="Berserk tome 1" style="width:100%">
+                        <h1 class="titreLivre">Berserk tome 1</h1>
+                        <h2 class="auteurLivre">Kentarō Miura</h2>
+                        <p class="price">$19.99</p>
+                        <p class="descriptionLivre">Guts, le guerrier noir, promène son imposante silhouette de routes en villages. Sur son passage, les cadavres s'amoncellent et il laisse derrière lui des torrents de sang. Le corps vêtu de noir, il porte sur son dos une épée aussi haute qu'un homme. ... (source : Google Books)</p>
+                        <p><button>Add to Cart</button></p>
+                    </div>
+                   
+                </div>
+            </div>
+
+            
+            
+          </div>
+          
+            
+      </div>
+  
+  
+      <footer>
+        <div class="container">
+        <p class="m-0 text-center text-white">Ce site est développé dans le cadre du cours INF3190 à l’UQAM</p>
+        
+        <a href="https://gitlab.info.uqam.ca/nayeri_poor.ali/inf3190-a21-tp" onclick="fenetrePopUp(this.href);return false">Essongue Kumambuelet Oswald</a><br>
+        <a href="https://gitlab.info.uqam.ca/nayeri_poor.ali/inf3190-a21-tp" onclick="fenetrePopUp(this.href);return false">Nayeri Poor Ali</a><br>
+
+        
+        <a href="https://uqam.ca/" target="_blank">UQAM</a><br>
+        
+        <a href="https://etudier.uqam.ca/cours?sigle=INF3190">INF3190</a>
+        </div>
+    </footer>    
+
+      <!-- Option 1: Bootstrap Bundle with Popper -->
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+  
+      
+    </body>
+  </html>

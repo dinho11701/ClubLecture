@@ -1,0 +1,320 @@
+/*Titre Page */
+h1.titrePage{
+  color: rgb(100, 51, 31);
+  text-align: center;
+  background-color: rgba(233, 213, 190, 0.925);
+  height: 55px;
+  width: 195px;
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 25px;
+}
+
+img.logo{
+  height: 13vh;
+  width: 17vh;
+  padding-left: 20px;
+}
+.navbar-nav > li{
+  margin-left:30px;
+  margin-right:30px;
+}
+.navbar-nav > li{
+  padding-left:30px;
+  padding-right:30px;
+}
+
+i.icone-menu{
+  color: azure;
+}
+
+.navbar .navbar-nav {
+  vertical-align: top;
+}
+
+.navbar .navbar-collapse {
+  text-align: center;
+}
+
+.navbar-custom {
+  height: 20vh;
+}
+/* bordure espace */
+div.espace{
+  border-style: groove  ;
+  border-color: rgb(252, 239, 231);
+  border-radius: 5vh;
+}
+
+/*footer*/
+footer{
+  color: rgba(255, 255, 255, 0.795);
+  background-color: rgb(54, 54, 54);
+  height: 15vh;
+  margin-bottom: 0;
+}
+/* image background*/
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("photographer.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+div.contenu{
+  background-color: rgba(133, 92, 54, 0.863);
+  height: 1200px;
+  width: 100hh;
+  padding-top: 25vh;
+}
+
+.carousel .carousel-item {
+  padding-top: 130px;
+  height: 100vh;
+  width: 200vh;
+}
+
+
+/***************
+* Page Chercher *
+****************/ 
+
+input[type=text] {
+  background-color: white;
+  background-position: 10px 10px;
+  background-repeat: no-repeat;
+  padding-left: 40px;
+  width: 30vh;
+  transition: width 0.4s ease-in-out;
+}
+
+input[type=text]:focus {
+  width: 105vh;
+}
+
+/* Titre catégorie */
+h1.categorieLivre{
+  padding-top: 5vh;
+  color: cornsilk;
+}
+
+/* Titre Livre*/
+h1.titreLivre{
+  padding-top: 2vh;
+  color: rgb(247, 223, 192);
+  font-size: 20px;
+  font-weight:800;
+}
+
+/* Auteur Livre*/
+h2.auteurLivre{
+  color: rgb(224, 210, 210);
+  font-size: 16 px;
+}
+
+/* Image Livre*/
+img.imageLivre{
+  border-radius: 15px;
+}
+/* Description Livre*/
+p.descriptionLivre{
+  color: rgb(211, 207, 188);
+  text-align: justify ;
+  font-size: 12px;
+  padding-left: 1vh;
+  padding-right: 1vh;
+}
+
+div.contenuChercher{
+  background-image: url("../images/topfond.jpg");
+  height: 630vh;
+  width: 100hh;
+  padding-top: 25vh;
+  background-repeat: round;
+}
+
+/* Espace chercher */
+div.espace-chercher{
+  background-color: rgba(46, 34, 25, 0.952);
+  width: 130vh;
+  height: 590vh;
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding-left: 5vh;
+  padding-right: 5vh;
+  padding-bottom: 5vh;
+}
+
+div.contenuLivre{
+padding-top: 5vh;
+display: inline-flex;
+margin-left: 0%;
+}
+/*Carte du produit*/
+.cardLivre {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background-color: rgb(58, 22, 14);
+  width: 34 vh;
+  max-width: 34vh;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius: 15px;
+  border-color: blanchedalmond;
+  border-style: groove;
+}
+
+
+.cardLivre + .cardLivre {
+  margin-left: 8vh;
+}
+
+.price {
+  color: rgb(161, 161, 161);
+  font-size: 22px;
+}
+
+.cardLivre button {
+  border: none;
+  outline: 0;
+  padding: 12px;
+  color: rgb(243, 231, 220);
+  background-color: rgb(65, 64, 63);
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.cardLivre button:hover {
+  opacity: 0.7;
+}
+
+/***************
+* Page Le Club *
+****************/ 
+
+/* Lecteur */
+iframe.youtube {
+  
+  display:block;
+  margin: 0 auto;
+  width: 100vh;
+  height: 60vh;
+}
+
+div.carte{
+  padding-top: 10vh;  
+}
+
+/* Information du club */
+div.information-club{
+  display:block;
+  margin: 0 auto;
+}
+
+div.contenuLeClub{
+  background-image: url("../images/topfond.jpg");
+  height: 170vh;
+  width: 120hh;
+  padding-top: 25vh;
+}
+
+div.espace-LeClub{
+  background-color: rgba(46, 34, 25, 0.952);
+  width: 130vh;
+  height: 120vh;
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-bottom: 5vh;
+  display: flexbox;
+}
+/***************
+* Page Connexion *
+****************/ 
+
+div.contenuConnexion{
+  background-image: url("../images/topfond.jpg");
+  height: 200vh;
+  width: 100hh;
+  padding-top: 25vh;
+}
+
+/* Espace contact */
+div.espace-connexion{
+  width: 95vh;
+  height: 150vh;
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-bottom: 5vh;
+  display: inline;
+}
+
+
+
+/***************
+* Page Contact *
+****************/ 
+
+div.contenuContact{
+  background-image: url("../images/topfond.jpg");
+  height: 200vh;
+  width: 100hh;
+  padding-top: 25vh;
+}
+
+/* Espace contact */
+div.espace-contact{
+  background-color: rgba(46, 34, 25, 0.952);
+  width: 95vh;
+  height: 150vh;
+  margin: 0 auto;
+  padding-top: 5vh;
+  padding-left: 10vh;
+  padding-right: 10vh;
+  padding-bottom: 5vh;
+  display: flex;
+}
+
+a.lienCarte{
+  color: rgb(61, 23, 23);
+}
+
+h5.titreCarte{
+  color: rgb(97, 41, 41);
+}
+
+
+/***************
+* Page Confirmation Compte *
+****************/ 
+
+div.contenuConfirmationCompte{
+  background-color: rgb(160, 126, 95);
+  height: 90vh;
+  width: 100hh;
+  padding-top: 25vh;
+}
